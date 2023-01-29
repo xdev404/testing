@@ -5,217 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
     <title>HowtoCode</title>
 
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: yellow;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-div {
+    width: 60px;
+    height: 50px;
+    background-color: #00c490;
+    /* border: 1px solid red; */
 
-        }
+    display: flex;
+    align-items: center;
 
-        .main-div {
-            width: 60px;
-            height: 50px;
-            background-color: #00c490;
-            /* border: 1px solid red; */
+    overflow: hidden;
 
-            /* display: flex; */
-            align-items: center;
+    position: fixed;
+}
 
-            overflow: hidden;
+.left-div {
+    width: 20px;
+    height: 22px;
+    /* background-color: yellow; */
+    justify-content: center;
+    margin-left: 8px;
 
-            position: fixed;
+}
 
-            z-index: 1;
-        }
+.left-div:hover {
+    cursor: pointer;
+}
 
-        .l-div {
-            transform: translate(0%, 0%);
-            display: block;
-        }
+.l {
+    width: 20px;
+    height:4px;
+    background-color: #fff;
 
-        .l-div:hover {
-            cursor: pointer;
-            display: block;
-        }
+    margin: 0px 0px 5px 0px;
+}
 
-        .l {
-            width: 20px;
-            height: 3px;
-            justify-content: space-between;
-            transform: translateX(50%)(-50%);
+.right-div {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.356); */
 
-            margin: 5px 0px 5px 8px;
-            
-            display: block;
-        }
+    /* transform: rotate(45deg); */
 
-        .r-div {
-            width: 100px;
-            height: 100px;
-            background-color: #fff;
-            /* border: 1px soli black; */
-            /* background-color: black; */
-
-            /* transform: rotate(45deg); */
-
-            position: relative;
-            transform: translate(55%, -55%) rotate(45deg);
-        }
+    position: absolute;
+    transform: translate(90%, 0%) rotate(45deg);
+}
 
 
-        /* MAIN SECTION CSS START FROM HERE  */
 
-        #main {
-            /* background-color: grey; */
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+/* MAIN SECTION CSS START FROM HERE  */
 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+#main {
+    /* background-color: grey; */
 
-        .mainm {
-            width: 640px;
-            height: auto;
-            /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        #chap4 {
-            color: red;
-            text-align: center;
-            text-transform: uppercase;
+.mainm {
+    width: 640px;
+    height: auto;
+    /* background-color: green; */
 
-            margin-top: 30px;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chap4 {
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    
+    margin-top: 30px;
+}
+#headr {
+    margin-top: 40px;
 
-        #headr {
-            margin-top: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
 
-            font-size: 36px;
-            font-weight: 600;
-        }
+#time {
+    margin: 50px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#time img {
+    max-width: 100%;
+    height: auto;
 
-        #time {
-            margin: 50px 0 10px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    align-self: center;
 
-        #time img {
-            max-width: 100%;
-            height: auto;
+    margin: 20px 0 10px 0;
 
-            border: 1px solid rgba(0, 0, 0, 0.459);
-            align-self: center;
+    filter: brightness(50%) blur(20px);
+}
 
-            margin: 20px 0 10px 0;
+#time img:hover {
 
-            filter: brightness(50%) blur(20px);
-        }
+    filter: brightness() blur() ;
+    transition: 1s;
+}
 
-        #time img:hover {
+#note {
+    margin: 10px 0 10px 0;
+}
+#let {
+    margin: 10px 0 10px 0;
+}
+.gt {
+    background-color: rgb(168, 168, 168);
+}
+p#our {
+    align-self: flex-start;
 
-            filter: brightness() blur();
-            transition: 1s;
-        }
+    margin: 10px 0 10px 0;
+}
 
-        #note {
-            margin: 10px 0 10px 0;
-        }
+#box1 {
+    width: 100%;
+    height: 200px;
+    background-color: grey;
 
-        #let {
-            margin: 10px 0 10px 0;
-        }
+    border: 1px solid red;
 
-        .gt {
-            background-color: rgb(168, 168, 168);
-        }
+    margin: 10px 0 10px 0;
+}
 
-        p#our {
-            align-self: flex-start;
+.marg {
+    margin: 10px 0 10px 0;
+    align-self: flex-start;
+}
 
-            margin: 10px 0 10px 0;
-        }
+#now {
+    align-self: flex-start;
+} 
 
-        #box1 {
-            width: 100%;
-            height: 200px;
-            background-color: grey;
+.chap {
+    text-align: center;
+    align-self: center;
+}
 
-            border: 1px solid red;
+#chap05, #chap03 {
+    color: red;
+}
 
-            margin: 10px 0 10px 0;
-        }
+#chap05:hover, #chap03:hover {
+    cursor: pointer;
+}
 
-        .marg {
-            margin: 10px 0 10px 0;
-            align-self: flex-start;
-        }
-
-        #now {
-            align-self: flex-start;
-        }
-
-        .chap {
-            text-align: center;
-            align-self: center;
-        }
-
-        #chap05,
-        #chap03 {
-            color: red;
-        }
-
-        #chap05:hover,
-        #chap03:hover {
-            cursor: pointer;
-        }
-
-        /* @media screen and (max-width: 220px) {
-            .mainm {
-                width: 100px;
-
-            }
-        } */
+@media screen and (max-width: 360px ) {
+    .mainm {
+        width: 340px;
         
-        #time, .papa {
-            font-size: 12px;
-        }
-
-        @media screen and (max-width: 360px) {
-            .mainm {
-                width: 340px;
-
-            }
-        }
-        
+    }
+}
     </style>
 </head>
 
 <body>
-    <header>
+    <section>
         <div class="main-div">
-            <div class="l-div">
+            <div class="left-div">
                 <div class="l"></div>
                 <div class="l"></div>
                 <div class="l"></div>
             </div>
-            <div class="r-div">
+            <div class="right-div">
 
             </div>
         </div>
-    </header>
+    </section>
 
     <main id="main">
         <div class="mainm">
