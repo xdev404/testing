@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 50px;
+    height: 50px;
+    background-color: #00c490;
+    clip-path: polygon(0 0%, 100% 0, 80% 50%, 100% 100%, 0 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: fixed;
+}
+
+.clip {
+
+    width: 25px;
+    height: 20px;
+    margin-left: 8px;
+    /* background-color: yellow; */
+
+    position: absolute;
+}
+
+.clip:hover {
+    cursor: pointer;
+}
+
+.l {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+
+    margin: 0 0 4px 0px ;
+}
+
+
+/* MAIN SECTION CSS START FROM HERE  */
+
+#main {
+    /* background-color: grey; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainm {
+    width: 640px;
+    height: auto;
+    /* background-color: green; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chap4 {
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    
+    margin-top: 30px;
+}
+#headr {
+    margin-top: 40px;
+
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#time {
+    margin: 50px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#time img {
+    max-width: 100%;
+    height: auto;
+
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    align-self: center;
+
+    margin: 20px 0 10px 0;
+
+    filter: brightness(50%) blur(20px);
+}
+
+#time img:hover {
+
+    filter: brightness() blur() ;
+    transition: 1s;
+}
+
+#note {
+    margin: 10px 0 10px 0;
+}
+#let {
+    margin: 10px 0 10px 0;
+}
+.gt {
+    background-color: rgb(168, 168, 168);
+}
+p#our {
+    align-self: flex-start;
+
+    margin: 10px 0 10px 0;
+}
+
+#box1 {
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+
+    border: 1px solid red;
+
+    margin: 10px 0 10px 0;
+}
+
+.marg {
+    margin: 10px 0 10px 0;
+    align-self: flex-start;
+}
+
+#now {
+    align-self: flex-start;
+} 
+
+.chap {
+    text-align: center;
+    align-self: center;
+}
+
+#chap05, #chap03 {
+    color: red;
+}
+
+#chap05:hover, #chap03:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 360px ) {
+    .mainm {
+        width: 340px;
+        
+    }
+}
